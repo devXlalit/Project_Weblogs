@@ -11,7 +11,7 @@ const BlogCard = ({ data }) => {
       className="grid md:grid-cols-2 md:px-6 py-10 lg:grid-cols-3 gap-4"
     >
       {data.map((post) => (
-        <BlogCardlist keys={post._id} post={post} />
+        <BlogCardlist key={post._id} post={post} />
       ))}
     </motion.div>
   );
