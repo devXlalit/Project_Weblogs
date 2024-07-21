@@ -19,7 +19,7 @@ const Feed = ({ search }) => {
     };
 
     fetchPost();
-  }, [search]);
+  }, [search, post]);
 
   return (
     <div>
