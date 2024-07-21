@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import BlogCard from "./BlogCard";
-import { motion } from "framer-motion";
-import { LazyMotion, domAnimation, loadComponents, m } from "framer-motion";
 
 const Feed = ({ search }) => {
   const [post, setPost] = useState([]);
