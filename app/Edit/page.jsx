@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useSearchParams } from "next/navigation";
-const page = () => {
+const Edit = () => {
   const searchPrams = useSearchParams();
   const router = useRouter();
 
@@ -97,4 +97,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Edit;

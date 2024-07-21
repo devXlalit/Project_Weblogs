@@ -7,7 +7,7 @@ import Footer from "../Components/Footer";
 import { motion } from "framer-motion";
 import BlogCard from "../Components/BlogCard";
 
-const page = () => {
+const Profile = () => {
   const { data: session } = useSession();
   const [post, setPost] = useState([]);
   useEffect(() => {
@@ -57,4 +57,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Profile;

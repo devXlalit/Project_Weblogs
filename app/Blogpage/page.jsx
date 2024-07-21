@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 import Footer from "../Components/Footer";
 import Nav from "../Components/Nav";
 import { delay, motion, scrollYProgress, useScroll } from "framer-motion";
-const page = () => {
+const Blogpage = () => {
   const searchPrams = useSearchParams();
 
   const blogId = searchPrams.get("id");
@@ -199,4 +199,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Blogpage;

@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const page = () => {
+const Create = () => {
   const router = useRouter();
   const { data: session } = useSession();
 
@@ -78,4 +78,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Create;

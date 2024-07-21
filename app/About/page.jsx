@@ -7,7 +7,7 @@ import {
 import React from "react";
 import Footer from "../Components/Footer";
 import { motion } from "framer-motion";
-const page = () => {
+const About = () => {
   return (
     <>
       <motion.div
@@ -81,4 +81,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default About;
