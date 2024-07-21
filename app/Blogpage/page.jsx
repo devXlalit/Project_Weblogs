@@ -177,7 +177,7 @@ const Blogpage = () => {
           {/* *Feature update  */}
 
           <p
-            className={`text-xl pt-10 whitespace-pre-wrap md:text-lg text-[#343A40] leading-normal`}
+            className={`text-md leading-tight pt-10 whitespace-pre-wrap md:text-lg text-[#343A40] md:leading-normal`}
           >
             {post.main_content && processContent(post.main_content)}
           </p>
