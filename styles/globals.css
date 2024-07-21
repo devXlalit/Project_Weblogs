@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background_color {
+  @apply bg-[#F8F9FA];
+}
+
+.greadient_text {
+  @apply bg-gradient-to-r from-[#050C9C] to-[#3ABEF9] tracking-tighter text-transparent bg-clip-text font-bold p-2 leading-none;
+}
+
+.black_btn {
+  @apply bg-[#343A40] py-2 px-4 rounded-full text-white hover:text-[#343A40] hover:bg-white duration-300  hover:outline hover:-outline-offset-1 hover:outline-1;
+}
+
+.blue_btn {
+  @apply bg-[#3572EF] py-2 px-6 rounded-full text-white hover:text-[#3572EF] hover:bg-white hover:outline hover:-outline-offset-1 hover:outline-1 duration-300;
+}
