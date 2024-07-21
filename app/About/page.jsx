@@ -50,7 +50,7 @@ const About = () => {
             </h2>
             <button className="hover:scale-105 duration-300">
               <a
-                href="https://github.com/devXlalit/useApi-Hook"
+                href="https://github.com/devXlalit/Project_weblogs.git"
                 target="__blank"
                 className="font-extrabold flex items-center gap-1 bg-[#252A34] text-[#EAEAEA] text-center  mt-3 py-2 px-4 rounded-full"
               >
