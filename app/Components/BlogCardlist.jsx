@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const BlogCardlist = ({ keys, post }) => {
+const BlogCardlist = ({ post }) => {
   return (
     <Link
       href={{
@@ -11,10 +11,7 @@ const BlogCardlist = ({ keys, post }) => {
         query: { id: post._id },
       }}
     >
-      <div
-        className="p-6 shadow-lg outline outline-1 outline-slate-500 rounded-3xl hover:scale-105 duration-300 ease-in-out"
-        key={keys}
-      >
+      <div className="p-6 shadow-lg outline outline-1 outline-slate-500 rounded-3xl hover:scale-105 duration-300 ease-in-out">
         <div className="flex gap-2 items-center pb-2">
           <Image
             className="rounded-full"
