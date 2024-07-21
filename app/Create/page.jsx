@@ -43,7 +43,7 @@ const Create = () => {
     >
       <h1 className="text-5xl greadient_text inline-block">Create Blog</h1>
 
-      <form className="p-6" onSubmit={handleSubmit}>
+      <form className="py-4 md:p-6" onSubmit={handleSubmit}>
         <input
           className="bg-neutral-200 text-2xl outline-none mb-4 text-[#343A40] w-full py-4 px-4 rounded-xl"
           type="text"

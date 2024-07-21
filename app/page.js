@@ -28,7 +28,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.9 }}
-            className="text-center text-sm md:text-xl leading-tight font-normal opacity-80 text-[#343A40] pb-6"
+            className="text-center text-xs md:text-xl leading-tight font-normal opacity-80 text-[#343A40] pb-6"
           >
             A Free and Open source bloging website for Content Creators and
             Developers.
@@ -41,7 +41,7 @@ export default function Home() {
             className="flex justify-center pb-10"
           >
             <input
-              className="shadow-2xl  shadow-[#3572EF]/50 outline-none py-2 px-2 w-2/5 rounded-lg"
+              className="shadow-2xl   shadow-[#3572EF]/50 outline-none py-2 px-2 md:w-2/5 rounded-lg"
               type="search"
               onChange={handleChange}
               placeholder="Search your blog topic here.."

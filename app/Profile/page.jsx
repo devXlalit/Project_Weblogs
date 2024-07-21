@@ -44,9 +44,9 @@ const Profile = () => {
           </span>
         </div>
         <div className="flex flex-wrap justify-between items-center ">
-          <h1 className="text-5xl greadient_text my-2">My Blogs</h1>
+          <h1 className="text-5xl greadient_text">My Blogs</h1>
           <Link href="/Create">
-            <button className="blue_btn font-bold ">Create</button>
+            <button className="blue_btn font-bold my-4">Create</button>
           </Link>
         </div>
         <BlogCard data={post} />

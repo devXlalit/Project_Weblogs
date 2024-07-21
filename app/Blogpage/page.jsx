@@ -8,7 +8,7 @@ import { RiLink, RiShareLine } from "@remixicon/react";
 import { useRouter } from "next/navigation";
 import Footer from "../Components/Footer";
 import Nav from "../Components/Nav";
-import { delay, motion, scrollYProgress, useScroll } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 const Blogpage = () => {
   const searchPrams = useSearchParams();
 
@@ -67,7 +67,7 @@ const Blogpage = () => {
       const isShortLine = sentenceCount < 2;
 
       return isShortLine ? (
-        <span key={index} className="font-bold block pb-2">
+        <span key={index} className="font-bold block pb-4">
           {line}
         </span>
       ) : (
@@ -177,7 +177,7 @@ const Blogpage = () => {
           {/* *Feature update  */}
 
           <p
-            className={`text-sm pt-10 whitespace-pre-wrap md:text-lg text-[#343A40] leading-normal`}
+            className={`text-xl pt-10 whitespace-pre-wrap md:text-lg text-[#343A40] leading-normal`}
           >
             {post.main_content && processContent(post.main_content)}
           </p>
