@@ -13,7 +13,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="background_color p-12 w-full min-h-screen">
+      <div className="background_color p-6 md:p-12 w-full min-h-screen">
         <Nav />
         <main>
           <motion.h1

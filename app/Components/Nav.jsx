@@ -25,7 +25,7 @@ const Nav = () => {
       </Link>
       {session?.user ? (
         <ul className="flex gap-2">
-          <button onClick={signOut} className="black_btn tracking-tighter">
+          <button onClick={signOut} className=" black_btn tracking-tighter">
             Sign out
           </button>
           <Link href="/Profile">

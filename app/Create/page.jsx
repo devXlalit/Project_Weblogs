@@ -39,27 +39,29 @@ const Create = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.8 }}
-      className="p-12 background_color"
+      className="p-6 md:p-12 background_color min-h-screen"
     >
-      <h1 className="text-5xl greadient_text inline-block">Create Blog</h1>
+      <h1 className="text-4xl md:text-5xl greadient_text inline-block">
+        Create Blog
+      </h1>
 
       <form className="py-4 md:p-6" onSubmit={handleSubmit}>
         <input
-          className="bg-neutral-200 text-2xl outline-none mb-4 text-[#343A40] w-full py-4 px-4 rounded-xl"
+          className="bg-neutral-200 md:text-2xl outline-none mb-4 text-[#343A40] w-full py-4 px-4 rounded-xl"
           type="text"
           placeholder="Title"
           value={post.title}
           onChange={(e) => setPost({ ...post, title: e.target.value })}
         />
         <input
-          className="bg-neutral-200 text-2xl mb-4 outline-none text-[#343A40] w-full py-4 px-4 rounded-xl"
+          className="bg-neutral-200 md:text-2xl mb-4 outline-none text-[#343A40] w-full py-4 px-4 rounded-xl"
           type="text"
           placeholder="Description"
           value={post.desc}
           onChange={(e) => setPost({ ...post, desc: e.target.value })}
         />
         <textarea
-          className="bg-neutral-200 mb-4 text-2xl min-h-56 outline-none text-[#343A40] w-full py-4 px-4 rounded-xl"
+          className="bg-neutral-200 mb-4 md:text-2xl min-h-56 outline-none text-[#343A40] w-full py-4 px-4 rounded-xl"
           type="text"
           placeholder="Main content"
           value={post.main_content}

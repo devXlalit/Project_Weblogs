@@ -67,7 +67,7 @@ const Blogpage = () => {
       const isShortLine = sentenceCount < 2;
 
       return isShortLine ? (
-        <span key={index} className="font-bold block pb-4">
+        <span key={index} className="font-bold block text-xl pb-4">
           {line}
         </span>
       ) : (
@@ -87,7 +87,7 @@ const Blogpage = () => {
         }}
         className="h-1 rounded-full overflow-hidden z-10 w-full bg-[#3572EF] fixed top-0"
       ></motion.div>
-      <div className="min-h-screen background_color p-12">
+      <div className="min-h-screen background_color p-6 md:p-12">
         {session ? (
           <div className="flex gap-2 items-center pb-6">
             <Image
@@ -177,7 +177,7 @@ const Blogpage = () => {
           {/* *Feature update  */}
 
           <p
-            className={`text-md leading-tight pt-10 whitespace-pre-wrap md:text-lg text-[#343A40] md:leading-normal`}
+            className={`text-md leading-none pt-10 whitespace-break-spaces md:text-lg text-[#343A40] md:leading-normal`}
           >
             {post.main_content && processContent(post.main_content)}
           </p>
