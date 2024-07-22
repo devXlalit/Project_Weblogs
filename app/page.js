@@ -41,7 +41,7 @@ export default function Home() {
             className="flex justify-center pb-10"
           >
             <input
-              className="shadow-2xl   shadow-[#3572EF]/50 outline-none py-2 px-2 md:w-2/5 rounded-lg"
+              className="shadow-2xl shadow-[#3572EF]/50 md:text-md outline-none py-2 px-2 md:w-2/5 rounded-lg"
               type="search"
               onChange={handleChange}
               placeholder="Search your blog topic here.."

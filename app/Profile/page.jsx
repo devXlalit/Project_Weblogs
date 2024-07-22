@@ -11,12 +11,16 @@ const Profile = () => {
   const { data: session } = useSession();
   const [post, setPost] = useState([]);
   useEffect(() => {
-    const fetchPost = async () => {
-      const response = await fetch(`/api/users/${session?.user.id}/posts`);
-      const data = await response.json();
-      setPost(data);
-    };
-    if (session?.user.id) fetchPost();
+    if (session?.user.id);
+    (async () => {
+      try {
+        const response = await fetch(`/api/users/${session?.user.id}/posts`);
+        const data = await response.json();
+        setPost(data);
+      } catch (error) {
+        console.log("Something went wrong: ", error);
+      }
+    })();
   });
   return (
     <>
