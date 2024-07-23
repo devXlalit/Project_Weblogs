@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BlogCardlist from "./BlogCardlist";
 import { motion } from "framer-motion";
+
 const BlogCard = ({ data }) => {
   return (
     <motion.div

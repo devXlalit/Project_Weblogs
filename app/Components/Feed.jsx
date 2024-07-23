@@ -7,7 +7,7 @@ const Feed = ({ search }) => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await fetch("/api/prompt", {
+        const response = await fetch(`/api/prompt`, {
           headers: {
             "Cache-Control": "no-cache",
           },

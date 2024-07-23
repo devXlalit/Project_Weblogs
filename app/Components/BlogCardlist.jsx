@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 const BlogCardlist = ({ post }) => {
   useEffect(() => {
-    window.onload;
+    
   }, [post.title]);
   return (
     <Link
